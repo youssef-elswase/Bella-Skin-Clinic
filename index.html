@@ -3,99 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bella Skin Clinic - نظام إدارة عيادات التجميل المتكامل</title>
+    <title>Bella Skin Clinic - النظام المتكامل لإدارة عيادات التجميل</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts (Cairo) -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Cairo', sans-serif;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-pink-500 selection:text-white">
 
     <!-- Header / Navbar -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2 space-x-reverse">
                 <span class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">Bella Skin</span>
+                <span class="text-xs bg-pink-100 text-pink-600 px-2.5 py-1 rounded-full font-bold">إصدار v1.0.0</span>
             </div>
             <a href="https://github.com/youssef-elswase/Bella-Skin-Clinic/releases/download/v1.0.0/BellaClinic_v1.0.0.zip" 
-               class="bg-gradient-to-l from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-5 py-2 rounded-full font-bold shadow-md shadow-pink-500/20 transition-all duration-300 transform hover:-translate-y-0.5 text-sm">
+               class="bg-gradient-to-l from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-5 py-2.5 rounded-2xl font-bold shadow-lg shadow-pink-500/20 transition-all duration-300 transform hover:-translate-y-0.5 text-sm">
                 تحميل التجربة المجانية 🎁
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-b from-pink-50/50 via-white to-slate-50">
+    <section class="relative overflow-hidden py-16 lg:py-28 bg-gradient-to-b from-pink-50/40 via-white to-slate-50">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <!-- Text Content -->
             <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-pink-100 text-pink-700">
-                    ✨ شريكك الذكي لإدارة عيادتك
+                    ✨ أفضل نظام ERP لإدارة عيادات ومراكز التجميل والجلدية
                 </span>
                 <h1 class="text-4xl lg:text-6xl font-black text-slate-900 leading-tight">
-                    أدِر عيادة التجميل الخاصة بك <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">بذكاء وسهولة فائقة</span>
+                    أدِر عيادتك كالمحترفين <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">منظومة ذكية، دقيقة، ومترابطة</span>
                 </h1>
-                <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0">
-                    نظام متكامل صُمم خصيصاً لعيادات الجلدية والتجميل. نظّم حجوزات المرضى، تتبع الحسابات والعمولات، وأدِر مخزن عيادتك بكفاءة ومن مكان واحد.
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Bella Skin Clinic هو نظام متكامل يربط الحجوزات والمخازن والعمولات والخزنة المالية تلقائياً. صُمم خصيصاً ليلبي احتياجات أطباء التجميل ومراكز العناية بالبشرة دون الحاجة لتعقيدات برمجية أو اتصال دائم بالإنترنت.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
                     <a href="https://github.com/youssef-elswase/Bella-Skin-Clinic/releases/download/v1.0.0/BellaClinic_v1.0.0.zip" 
-                       class="bg-gradient-to-l from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-pink-500/25 transition-all duration-300 transform hover:-translate-y-1 text-center">
+                       class="bg-gradient-to-l from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-pink-500/25 transition-all duration-300 transform hover:-translate-y-1 text-center text-lg">
                         تحميل البرنامج وتجربة 7 أيام مجاناً
                     </a>
+                    <a href="https://drive.google.com/file/d/1wkV-GKD6DllslhYaQliDNZjwf9bGMq8m/view?usp=sharing" target="_blank"
+                       class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 px-8 py-4 rounded-2xl font-bold shadow-sm transition-all duration-300 transform hover:-translate-y-1 text-center text-lg flex items-center justify-center gap-2">
+                        <span>▶️ شاهد الفيديو التوضيحي للبرنامج</span>
+                    </a>
                 </div>
-                <div class="flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-500 pt-2">
-                    <span class="flex items-center gap-1">✔️ لا يتطلب إنترنت</span>
-                    <span class="flex items-center gap-1">✔️ متوافق مع Windows 10/11</span>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-5 text-sm text-slate-500 pt-2">
+                    <span class="flex items-center gap-1.5">✔️ يعمل بدون إنترنت (أوفلاين)</span>
+                    <span class="flex items-center gap-1.5">✔️ متوافق مع Windows 10/11</span>
+                    <span class="flex items-center gap-1.5">🔑 الخزنة المالية مؤمنة بافتراضي (0000)</span>
                 </div>
             </div>
             
-            <!-- App Preview Placeholder -->
+            <!-- App Preview Placeholder (Modern Mockup) -->
             <div class="lg:col-span-5 relative">
-                <div class="absolute inset-0 bg-gradient-to-tr from-pink-300 to-purple-400 rounded-3xl blur-2xl opacity-20 -z-10 transform rotate-6"></div>
-                <div class="bg-white p-4 rounded-3xl shadow-2xl border border-slate-100 transform lg:rotate-2 transition-transform duration-500 hover:rotate-0">
-                    <div class="bg-slate-900 w-full h-[300px] rounded-2xl flex flex-col items-center justify-center text-white p-6 text-center">
-                        <span class="text-4xl mb-3">💻</span>
-                        <h3 class="text-xl font-bold mb-2">واجهة Bella Skin Clinic</h3>
-                        <p class="text-sm text-slate-400 max-w-xs">شاشة لوحة تحكم عصرية لمتابعة النشاط اليومي للعيادة بشكل فوري وبسيط</p>
+                <div class="absolute inset-0 bg-gradient-to-tr from-pink-300 to-purple-400 rounded-3xl blur-3xl opacity-25 -z-10 transform rotate-6"></div>
+                <div class="bg-white p-3 rounded-3xl shadow-2xl border border-slate-100/80 transform lg:rotate-1 transition-all duration-500 hover:rotate-0">
+                    <div class="bg-gradient-to-b from-slate-900 to-slate-800 rounded-2xl p-6 text-white space-y-4 shadow-inner">
+                        <div class="flex items-center justify-between border-b border-slate-700/50 pb-3">
+                            <span class="text-sm font-semibold text-pink-400">لوحة التحكم التفاعلية 📊</span>
+                            <div class="flex gap-1.5">
+                                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/30">
+                                <span class="text-xs text-slate-400 block">الطبيب الأكثر طلباً هذا الشهر 🩺</span>
+                                <span class="text-base font-bold text-slate-100">Nada Ahmed</span>
+                            </div>
+                            <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/30">
+                                <span class="text-xs text-slate-400 block">الجلسة الأكثر طلباً 🔥</span>
+                                <span class="text-sm font-bold text-slate-100">Package Session: PRP Hair Growth (1/6)</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/30">
+                                    <span class="text-xs text-slate-400 block">الربط بالمخزن 📦</span>
+                                    <span class="text-xs font-bold text-emerald-400">مزامنة تلقائية للمستهلكات</span>
+                                </div>
+                                <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/30">
+                                    <span class="text-xs text-slate-400 block">متابعة الباقات ✨</span>
+                                    <span class="text-xs font-bold text-purple-400">تتبع تلقائي للزيارات المتبقية</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Deep Tech Features Section -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">لماذا تختار Bella Skin لنظام عيادتك؟</h2>
-                <p class="text-slate-500">ميزات احترافية صُممت لتبسيط العمل اليومي للطبيب ومساعديه وتقليل وقت إدارة الدفاتر.</p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">ما الذي يجعل برنامجنا مختلفاً واحترافياً؟</h2>
+                <p class="text-slate-500 text-lg">منظومة برمجية ذكية مترابطة الأطراف لإلغاء العمل اليدوي والأخطاء الحسابية تماماً.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-pink-100 flex items-center justify-center text-2xl">📅</div>
-                    <h3 class="text-xl font-bold text-slate-900">تنظيم الحجوزات والمرضى</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">جدولة مرنة لمواعيد المرضى، كشف أوقات العمل المتاحة، والبحث الفوري عن سجلات المرضى والخدمات السابقة.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 h-1.5 w-full bg-gradient-to-l from-pink-500 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-pink-100 flex items-center justify-center text-2xl">📊</div>
+                    <h3 class="text-xl font-bold text-slate-900">لوحة تحكم ذكية وشاملة</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        تابع عمل عيادتك لحظة بلحظة. تعرض لك اللوحة الإحصائيات الأكثر أهمية تلقائياً: الطبيب الأكثر إنتاجية، الجلسة الأكثر طلباً، وتتبع المشتركين في باقات الجلسات المتعددة بكل دقة.
+                    </p>
                 </div>
-                <!-- Card 2 -->
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center text-2xl">💳</div>
-                    <h3 class="text-xl font-bold text-slate-900">إدارة الحسابات والعمولات</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">تسجيل آمن ومفصل للمصروفات والواردات اليومية، وحساب تلقائي لعمولات الأطباء والشركاء بدون أي أخطاء حسابية.</p>
+
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 h-1.5 w-full bg-gradient-to-l from-pink-500 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center text-2xl">📦</div>
+                    <h3 class="text-xl font-bold text-slate-900">ربط ذكي وتلقائي بالمخازن</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        لا حاجة لتسجيل المستهلكات يدوياً! بمجرد إتمام أي جلسة علاجة أو تجميلية، يقوم النظام تلقائياً بخصم المواد والأدوات المستهلكة من جرد المخزن المدمج وتحديث الكميات فوراً.
+                    </p>
                 </div>
-                <!-- Card 3 -->
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-indigo-100 flex items-center justify-center text-2xl">📦</div>
-                    <h3 class="text-xl font-bold text-slate-900">تنبيهات جرد المخزن تلقائياً</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">أدِر منتجات العناية بالبشرة والمستلزمات الطبية في مخزنك، مع إشعارك فوراً بالمنتجات التي أوشكت كميتها على النفاد.</p>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 h-1.5 w-full bg-gradient-to-l from-pink-500 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-teal-100 flex items-center justify-center text-2xl">📅</div>
+                    <h3 class="text-xl font-bold text-slate-900">نظام حجز آلي متكامل</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        بمجرد حجز موعد لجلسة أو كشف جديد، يقوم النظام بإنشاء ملف تعريفي وسجل طبي كامل للمريض تلقائياً في قاعدة البيانات دون الحاجة لإعادة كتابة تفاصيله يدوياً.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 h-1.5 w-full bg-gradient-to-l from-pink-500 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl">🤝</div>
+                    <h3 class="text-xl font-bold text-slate-900">إدارة الأطباء والعمولات</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        قم بإضافة الأطباء وتحديد طريقة التعامل معهم بمرونة تامة: سواء برواتب شهرية ثابتة، أو بنظام العمولات والنسب المئوية لكل خدمة وجلسة يقدمونها لمرضاهم مع تقارير تصفية الحسابات.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 h-1.5 w-full bg-gradient-to-l from-pink-500 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-2xl">🔒</div>
+                    <h3 class="text-xl font-bold text-slate-900">حماية الخزنة المالية بكلمة مرور</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        الأمور المالية لعيادتك في أمان تام. الخزنة والحسابات محمية بكلمة مرور مخصصة (الافتراضية للتجربة هي أصفار <code class="bg-amber-50 px-1 py-0.5 rounded text-amber-700 font-bold">0000</code>)، ويمكنك تعديلها وتخصيصها بسهولة من قائمة الإعدادات.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 space-y-4 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 h-1.5 w-full bg-gradient-to-l from-pink-500 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center text-2xl">📄</div>
+                    <h3 class="text-xl font-bold text-slate-900">تصدير التقارير الشهرية</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        بضغطة زر واحدة، قم بتصدير تقرير شامل لكل تعاملات وإيرادات العيادة الشهرية لمتابعة الأرباح والنمو بدقة وسرعة وبصيغ قياسية لسهولة تداولها.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo Section -->
+    <section class="py-20 bg-slate-900 text-white relative">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/30 via-slate-950/80 to-slate-950 -z-10"></div>
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-8">
+            <span class="text-pink-400 font-bold tracking-wider text-xs uppercase bg-pink-500/10 px-3.5 py-1.5 rounded-full">شرح بالفيديو 📽️</span>
+            <h2 class="text-3xl lg:text-5xl font-black">شاهد كيف يعمل البرنامج بالتفصيل!</h2>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                قمنا بإعداد شرح فيديو شامل ومميز لترى كيف يمكنك ربط الجلسات، إدارة الحسابات، ضبط إعدادات العمولات واستخدام البرنامج خطوة بخطوة.
+            </p>
+            
+            <!-- Custom Video Callout Mockup -->
+            <div class="max-w-3xl mx-auto bg-slate-800/80 p-8 rounded-3xl border border-slate-700/50 shadow-2xl space-y-6">
+                <div class="w-20 h-20 bg-pink-500 hover:bg-pink-600 text-white rounded-full flex items-center justify-center text-3xl shadow-lg shadow-pink-500/30 transition-all duration-300 transform hover:scale-110 cursor-pointer mx-auto">
+                    <a href="https://drive.google.com/file/d/1wkV-GKD6DllslhYaQliDNZjwf9bGMq8m/view?usp=sharing" target="_blank" class="block translate-x-0.5">▶️</a>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-1">دليل تشغيل وفيديو توضيحي لـ Bella Skin</h4>
+                    <p class="text-sm text-slate-400">انقر لمشاهدة الفيديو بالكامل على Google Drive والتعرف على خبايا وأسرار النظام.</p>
+                </div>
+                <div class="pt-2">
+                    <a href="https://drive.google.com/file/d/1wkV-GKD6DllslhYaQliDNZjwf9bGMq8m/view?usp=sharing" target="_blank"
+                       class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold px-6 py-3 rounded-2xl hover:opacity-90 transition-opacity duration-300">
+                        فتح واستعراض الفيديو التوضيحي 🚀
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Steps for testers -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-6 space-y-12">
+            <div class="text-center space-y-4">
+                <h2 class="text-3xl font-extrabold text-slate-900">طريقة البدء السريع وتجربة البرنامج 🛠️</h2>
+                <p class="text-slate-500">ابدأ استخدام وتجربة النظام في 3 خطوات بسيطة للغاية وبدون أي تعقيد.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm space-y-3">
+                    <span class="text-2xl">📥</span>
+                    <h4 class="font-bold text-slate-900">1. تحميل البرنامج</h4>
+                    <p class="text-xs text-slate-500">حمل الملف المضغوط وفك الضغط في أي مكان تريده على جهازك.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm space-y-3">
+                    <span class="text-2xl">⚡</span>
+                    <h4 class="font-bold text-slate-900">2. التشغيل والتجربة</h4>
+                    <p class="text-xs text-slate-500">اضغط مرتين على ملف <code class="bg-slate-100 px-1 py-0.5 rounded text-rose-600 font-mono">BellaClinic.exe</code> لتبدأ رحلتك فوراً مجاناً.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm space-y-3">
+                    <span class="text-2xl">🔑</span>
+                    <h4 class="font-bold text-slate-900">3. دخول الخزنة</h4>
+                    <p class="text-xs text-slate-500">الرقم السري الافتراضي لقائمة المالية هو (أصفار <code class="font-bold text-slate-800">0000</code>) ويمكنك تعديله من الإعدادات.</p>
                 </div>
             </div>
         </div>
@@ -104,9 +233,9 @@
     <!-- Trial Callout -->
     <section class="py-16 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-center">
         <div class="max-w-4xl mx-auto px-6 space-y-6">
-            <h2 class="text-3xl lg:text-4xl font-extrabold">ابدأ فترة تجاربك المجانية اليوم!</h2>
+            <h2 class="text-3xl lg:text-4xl font-extrabold">برنامج عيادتك جاهز للعمل والتحميل الآن!</h2>
             <p class="text-lg text-pink-100 max-w-xl mx-auto">
-                حمل الملف المضغوط، فك الضغط على جهاز الكمبيوتر الخاص بك، وابدأ بالاستمتاع بتجربة إدارة عيادة ذكية لمدة 7 أيام.
+                وفر وقتك، ألغِ الدفاتر الورقية، وارتقِ بخدمة مرضاك مع Bella Skin Clinic اليوم.
             </p>
             <div class="pt-4">
                 <a href="https://github.com/youssef-elswase/Bella-Skin-Clinic/releases/download/v1.0.0/BellaClinic_v1.0.0.zip" 
@@ -121,7 +250,7 @@
     <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <span class="text-lg font-bold text-white">Bella Skin Clinic</span>
-            <p class="text-sm">جميع الحقوق محفوظة © 2026. طُوّر بكل حب لخدمة أطباء التجميل.</p>
+            <p class="text-sm">جميع الحقوق محفوظة © 2026. طُوّر بكل حب لخدمة أطباء التجميل ومراكز العناية بالبشرة.</p>
         </div>
     </footer>
 
